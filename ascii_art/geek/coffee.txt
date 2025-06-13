@@ -1,0 +1,28 @@
+    ████████████████████████████████
+    █                              █
+    █         COFFEE && CODE       █
+    █                              █
+    █           ☕☕☕☕☕       █
+    █                              █
+    █    while(coffee.exists()) {  █
+    █        code();               █
+    █        coffee.drink();       █
+    █        if(!coffee) {         █
+    █            panic();          █
+    █            getCoffee();      █
+    █        }                     █
+    █    }                         █
+    █                              █
+    █  ┌──────────────────────┐    █
+    █  │ CAFFEINE.EXE         │    █
+    █  │ Status: RUNNING      │    █
+    █  │ Level: MAXIMUM       │    █
+    █  │ Productivity: 100%   │    █
+    █  └──────────────────────┘    █
+    █                              █
+    █     ☕ FUELED BY COFFEE      █
+    █       POWERED BY CODE        █
+    █                              █
+    ████████████████████████████████
+
+       ☕ PROGRAMMER FUEL ☕

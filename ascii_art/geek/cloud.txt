@@ -1,0 +1,26 @@
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    ▓                              ▓
+    ▓          CLOUD COMPUTING     ▓
+    ▓                              ▓
+    ▓        ☁️☁️☁️☁️☁️☁️☁️        ▓
+    ▓                              ▓
+    ▓  ┌────────────────────────┐  ▓
+    ▓  │ ☁️ AWS Infrastructure  │  ▓
+    ▓  │                       │  ▓
+    ▓  │ 🖥️ EC2: 12 instances  │  ▓
+    ▓  │ 💾 S3: 500TB storage  │  ▓
+    ▓  │ 🗄️ RDS: 3 databases   │  ▓
+    ▓  │ 🌐 CloudFront: Active │  ▓
+    ▓  │ 🔐 IAM: Secured       │  ▓
+    ▓  │                       │  ▓
+    ▓  │ Status: ✅ Healthy    │  ▓
+    ▓  └────────────────────────┘  ▓
+    ▓                              ▓
+    ▓     ☁️ SCALE TO THE SKY ☁️   ▓
+    ▓                              ▓
+    ▓  💰 Cost: $999/month         ▓
+    ▓  ⚡ Uptime: 99.99%           ▓
+    ▓                              ▓
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+       ☁️ CLOUD INFRASTRUCTURE ☁️

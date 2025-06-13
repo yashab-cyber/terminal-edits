@@ -1,0 +1,35 @@
+# ZehraSec Terminal Configuration File
+# Version: 2.2.0
+# Developed by: Yashab Alam - Founder & CEO of ZehraSec
+
+# Security Configuration
+MAX_FAIL_ATTEMPTS=3
+LOCKOUT_DURATION=300
+MIN_PASSWORD_LENGTH=6
+SESSION_TIMEOUT=3600
+
+# Customization Configuration
+DEFAULT_BANNER_CATEGORY=logoasciiart
+DEFAULT_BANNER_FILE=zehrasec_inc.txt
+DEFAULT_PROMPT=ZehraSec
+
+# Visual Configuration
+ENABLE_ANIMATIONS=true
+TYPING_SPEED=0.02
+MATRIX_DURATION=3
+ENABLE_COLORS=true
+
+# Performance Configuration
+CACHE_ASCII_ART=true
+PRELOAD_BANNERS=false
+ENABLE_LOGGING=true
+
+# Feature Configuration
+ENABLE_MATRIX_EFFECT=true
+ENABLE_PROMPT_CUSTOMIZATION=true
+ENABLE_BANNER_CUSTOMIZATION=true
+ENABLE_RANDOM_THEMES=true
+
+# Platform Configuration
+AUTO_DETECT_PLATFORM=true
+CROSS_PLATFORM_MODE=true

@@ -1,0 +1,28 @@
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░                              ░
+    ░           BLOCKCHAIN         ░
+    ░                              ░
+    ░  ┌──────┐ ┌──────┐ ┌──────┐  ░
+    ░  │Block1│→│Block2│→│Block3│  ░
+    ░  │Hash: │ │Hash: │ │Hash: │  ░
+    ░  │0x1a2b│ │0x3c4d│ │0x5e6f│  ░
+    ░  └──────┘ └──────┘ └──────┘  ░
+    ░                              ░
+    ░  🔗 IMMUTABLE LEDGER 🔗      ░
+    ░                              ░
+    ░  ┌─────────────────────────┐  ░
+    ░  │ CRYPTOCURRENCY MINING  │  ░
+    ░  │                        │  ░
+    ░  │ ⛏️ Bitcoin: $50,000    │  ░
+    ░  │ 💎 Ethereum: $3,000    │  ░
+    ░  │ 🚀 Solana: $100        │  ░
+    ░  │                        │  ░
+    ░  │ Mining Rate: 1.5 GH/s  │  ░
+    ░  │ Power: 1200W           │  ░
+    ░  └─────────────────────────┘  ░
+    ░                              ░
+    ░  💰 DECENTRALIZED FUTURE 💰  ░
+    ░                              ░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+       ₿ BLOCKCHAIN TECHNOLOGY ₿

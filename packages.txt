@@ -1,0 +1,302 @@
+# Package Documentation - ZehraSec Terminal v2.2.0
+
+## 📦 System Dependencies
+
+### Critical Dependencies (Required)
+- **bash** (version 4.0+) - Main shell interpreter
+- **sha256sum** - Password hashing utility  
+- **tput** - Terminal capability interface
+- **date** - Date and time utilities
+- **grep** - Text pattern matching
+- **awk** - Text processing
+- **sed** - Stream editor
+
+### High Priority Dependencies (Recommended)
+- **git** - Version control for updates
+- **curl** or **wget** - Network operations and downloads
+- **find** - File system search
+- **wc** - Word, line, character counting
+
+### Enhanced Features Dependencies (Optional)
+- **figlet** - ASCII art text generation
+- **bc** - Advanced mathematical calculations
+- **node/nodejs** - JavaScript runtime for enhanced features
+
+## 🐧 Linux Package Installation
+
+### Ubuntu/Debian (APT)
+```bash
+# Update package lists
+sudo apt update
+
+# Install critical dependencies
+sudo apt install -y bash coreutils findutils grep gawk sed
+
+# Install recommended dependencies
+sudo apt install -y git curl wget
+
+# Install optional dependencies
+sudo apt install -y figlet bc nodejs npm
+```
+
+### CentOS/RHEL/Fedora (YUM/DNF)
+```bash
+# CentOS/RHEL 7
+sudo yum install -y bash coreutils findutils grep gawk sed git curl wget figlet bc nodejs npm
+
+# Fedora/RHEL 8+
+sudo dnf install -y bash coreutils findutils grep gawk sed git curl wget figlet bc nodejs npm
+```
+
+### Arch Linux (Pacman)
+```bash
+# Update system
+sudo pacman -Syu
+
+# Install dependencies
+sudo pacman -S bash coreutils findutils grep gawk sed git curl wget figlet bc nodejs npm
+```
+
+### openSUSE (Zypper)
+```bash
+# Install dependencies
+sudo zypper install -y bash coreutils findutils grep gawk sed git curl wget figlet bc nodejs npm
+```
+
+### Alpine Linux (APK)
+```bash
+# Install dependencies
+sudo apk add bash coreutils findutils grep gawk sed git curl wget figlet bc nodejs npm
+```
+
+## 🍎 macOS Package Installation
+
+### Using Homebrew (Recommended)
+```bash
+# Install Homebrew if not installed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install dependencies
+brew install bash git curl wget figlet bc node
+
+# Update bash (macOS default is old)
+brew install bash
+echo '/opt/homebrew/bin/bash' | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/bash
+```
+
+### Using MacPorts
+```bash
+# Install MacPorts dependencies
+sudo port install bash git curl wget figlet bc nodejs18
+```
+
+## 🪟 Windows Package Installation
+
+### Windows Subsystem for Linux (WSL) - Recommended
+```bash
+# Install WSL first, then use Linux commands above
+wsl --install
+
+# In WSL, use Ubuntu/Debian commands
+sudo apt update && sudo apt install -y bash git curl figlet bc nodejs
+```
+
+### Git Bash (Minimal)
+```bash
+# Git Bash comes with basic bash
+# Download from: https://git-scm.com/downloads
+
+# Additional tools via package managers below
+```
+
+### Chocolatey Package Manager
+```powershell
+# Install Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# Install dependencies
+choco install -y git curl wget figlet nodejs
+
+# Install Windows Terminal (recommended)
+choco install -y microsoft-windows-terminal
+```
+
+### Scoop Package Manager
+```powershell
+# Install Scoop
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+
+# Install dependencies
+scoop install git curl wget nodejs
+
+# Install extras
+scoop bucket add extras
+scoop install windows-terminal
+```
+
+### winget (Windows 10 1909+)
+```powershell
+# Install dependencies
+winget install Git.Git
+winget install cURL.cURL
+winget install OpenJS.NodeJS
+winget install Microsoft.WindowsTerminal
+```
+
+## 📱 Termux (Android) Package Installation
+
+```bash
+# Update Termux
+pkg update && pkg upgrade
+
+# Install dependencies
+pkg install -y bash git curl wget figlet bc nodejs
+
+# Install optional tools
+pkg install -y python3 python3-pip
+
+# Grant storage permissions
+termux-setup-storage
+```
+
+## 🔧 Dependency Verification
+
+### Check Installation Script
+```bash
+#!/bin/bash
+# Dependency checker for ZehraSec Terminal
+
+echo "🔍 Checking ZehraSec Terminal Dependencies..."
+
+# Critical dependencies
+CRITICAL=("bash" "sha256sum" "tput" "date" "grep" "awk" "sed")
+# Recommended dependencies  
+RECOMMENDED=("git" "curl" "find" "wc")
+# Optional dependencies
+OPTIONAL=("figlet" "bc" "node")
+
+check_command() {
+    if command -v "$1" &> /dev/null; then
+        echo "✅ $1: $(command -v "$1")"
+        return 0
+    else
+        echo "❌ $1: Not found"
+        return 1
+    fi
+}
+
+echo -e "\n📋 Critical Dependencies:"
+critical_missing=0
+for cmd in "${CRITICAL[@]}"; do
+    if ! check_command "$cmd"; then
+        ((critical_missing++))
+    fi
+done
+
+echo -e "\n📋 Recommended Dependencies:"
+for cmd in "${RECOMMENDED[@]}"; do
+    check_command "$cmd"
+done
+
+echo -e "\n📋 Optional Dependencies:"
+for cmd in "${OPTIONAL[@]}"; do
+    check_command "$cmd"
+done
+
+echo -e "\n📊 Summary:"
+if [[ $critical_missing -eq 0 ]]; then
+    echo "✅ All critical dependencies satisfied"
+    echo "🚀 ZehraSec Terminal is ready to run!"
+else
+    echo "❌ $critical_missing critical dependencies missing"
+    echo "⚠️  Please install missing dependencies before running"
+fi
+```
+
+## 🚀 Automatic Dependency Installation
+
+The ZehraSec Terminal installer (`install.sh`) automatically detects and installs missing dependencies using your system's package manager:
+
+```bash
+# Linux/macOS automatic installation
+./install.sh --install-deps
+
+# Windows PowerShell automatic installation  
+.\build.ps1 -SetupDependencies
+
+# Check dependencies only
+./install.sh --check-deps    # Linux/macOS
+.\build.ps1 -Test           # Windows
+```
+
+## 🛠️ Manual Installation Troubleshooting
+
+### Common Issues
+
+#### Bash Version Too Old
+```bash
+# Check bash version
+bash --version
+
+# If < 4.0, update:
+# Ubuntu/Debian: sudo apt install bash
+# macOS: brew install bash
+# CentOS: sudo yum install bash
+```
+
+#### Missing sha256sum (macOS)
+```bash
+# macOS uses shasum instead
+# The script automatically detects this
+```
+
+#### Permission Issues
+```bash
+# Fix script permissions
+chmod +x .terminal.sh
+chmod +x install.sh
+
+# Fix config directory permissions
+chmod 700 ~/.zehrasec
+```
+
+#### Terminal Color Support Issues
+```bash
+# Check color support
+tput colors
+
+# Try different terminal emulators:
+# - Windows Terminal (Windows)
+# - iTerm2 (macOS)  
+# - GNOME Terminal (Linux)
+```
+
+## 📊 Platform-Specific Notes
+
+### Linux
+- Most distributions include all critical dependencies
+- Package manager detection is automatic
+- SELinux may require additional configuration
+
+### macOS
+- Default bash is very old (3.2), update recommended
+- Homebrew is the preferred package manager
+- Some utilities have different names (shasum vs sha256sum)
+
+### Windows
+- WSL provides the best compatibility
+- Git Bash has limited functionality
+- PowerShell integration available
+
+### Termux
+- Requires storage permissions for file operations
+- Uses 'pkg' instead of standard package managers
+- Limited to user-space installations
+
+---
+
+**🛡️ For support with package installation, visit ZehraSec documentation or contact support**

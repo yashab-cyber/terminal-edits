@@ -1,0 +1,27 @@
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    ▓                            ▓
+    ▓         ROUTER/WIFI        ▓
+    ▓                            ▓
+    ▓  ┌──────────────────────┐  ▓
+    ▓  │  📶 WIFI STATUS      │  ▓
+    ▓  │                     │  ▓
+    ▓  │  Network: ZehraSec   │  ▓
+    ▓  │  Signal: ▓▓▓▓▓ 100%  │  ▓
+    ▓  │  Speed: 1000 Mbps    │  ▓
+    ▓  │                     │  ▓
+    ▓  │  Connected Devices:  │  ▓
+    ▓  │  • Laptop (Admin)    │  ▓
+    ▓  │  • Phone (User)      │  ▓
+    ▓  │  • Terminal (Secure) │  ▓
+    ▓  │                     │  ▓
+    ▓  └──────────────────────┘  ▓
+    ▓                            ▓
+    ▓  ● ● ● ●    [POWER] [RST]  ▓
+    ▓                            ▓
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+       📡 NETWORK ROUTER 📡
+       
+       ))) WIFI SIGNALS (((
+      )))   STRONG      (((
+     )))    SECURITY     (((

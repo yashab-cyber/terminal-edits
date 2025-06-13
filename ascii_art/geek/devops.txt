@@ -1,0 +1,26 @@
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░                              ░
+    ░           DEVOPS             ░
+    ░                              ░
+    ░  ┌──────────────────────┐    ░
+    ░  │ CI/CD PIPELINE       │    ░
+    ░  │                     │    ░
+    ░  │ Git Push ──→ Build   │    ░
+    ░  │    ↓           ↓     │    ░
+    ░  │  Test ←──── Deploy   │    ░
+    ░  │    ↓           ↓     │    ░
+    ░  │ Monitor ←─── Release │    ░
+    ░  │                     │    ░
+    ░  └──────────────────────┘    ░
+    ░                              ░
+    ░  🐳 Docker: RUNNING          ░
+    ░  ☸️ Kubernetes: HEALTHY       ░
+    ░  🔧 Jenkins: BUILDING        ░
+    ░  📊 Monitoring: ACTIVE       ░
+    ░                              ░
+    ░    "It works in staging"     ░
+    ░     - Famous Last Words      ░
+    ░                              ░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+       🔄 DEVOPS LIFECYCLE 🔄
